@@ -1,11 +1,11 @@
 apiVersion: constraints.gatekeeper.sh/v1beta1
 kind: K8sRequiredLabels
 metadata:
-  name: require-labels
+  name: apigroups-must-have-gk
 spec:
   match:
     kinds:
-    - apiGroups: [""]
-      kinds: ["Namespace"]
+      - apiGroups: [""]
+        kinds: ["Namespace", "Deployment", "Pod", "ReplicaSet"]
   parameters:
-    labels: ["environment"]
+    labels: ["gatekeeper"]
