@@ -11,5 +11,10 @@ metadata:
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: demo
+  name: argocd
+--- 
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: james-session
 
