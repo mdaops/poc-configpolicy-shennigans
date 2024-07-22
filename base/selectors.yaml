@@ -5,5 +5,13 @@ metadata:
 spec:
   selector:
     matchLabels:
-      environment: dev
       type: application
+---
+apiVersion: configmanagement.gke.io/v1
+kind: ClusterSelector
+metadata:
+  name: tool-selector
+spec:
+  selector:
+    matchLabels:
+      type: tool

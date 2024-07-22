@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: example-config
-data:
-  MAX_NODES: "4"
-  MONITORING_ENABLED: "true"
