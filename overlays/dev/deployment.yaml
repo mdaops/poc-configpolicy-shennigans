@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: nginx-deployment
   annotations:
-    configmanagement.gke.io/cluster-selector: application
+    configmanagement.gke.io/cluster-selector: application-selector
 spec:
   replicas: 3
   selector:
