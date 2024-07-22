@@ -6,6 +6,6 @@ spec:
   match:
     kinds:
       - apiGroups: [""]
-        kinds: ["Namespace"]
+        kinds: ["Namespace", "Deployment", "Pod", "ReplicaSet"]
   parameters:
     labels: ["gatekeeper"]
