@@ -1,0 +1,11 @@
+apiVersion: configmanagement.gke.io/v1
+kind: ConfigManagement
+metadata:
+  name: config-management
+spec:
+  preventDeletion: true
+  policyController:
+    enabled: true
+  configSync:
+    enabled: true
+    sourceFormat: unstructured

@@ -1,0 +1,16 @@
+apiVersion: configsync.gke.io/v1beta1
+kind: ClusterSelector
+metadata:
+  name: dev
+spec:
+  selector:
+    matchLabels:
+      environment: dev
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: example-config
+data:
+  MAX_NODES: "4"
+  MONITORING_ENABLED: "true"
