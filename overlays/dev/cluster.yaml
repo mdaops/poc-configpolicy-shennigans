@@ -1,13 +1,3 @@
-apiVersion: configmanagement.gke.io/v1
-kind: ClusterSelector
-metadata:
-  name: application-selector
-spec:
-  selector:
-    matchLabels:
-      environment: dev
-      type: application
----
 apiVersion: v1
 kind: ConfigMap
 metadata:
