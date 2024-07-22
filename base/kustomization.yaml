@@ -1,7 +1,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- ./selectors.yaml
+- selectors.yaml
 - rbac/cluster-admin-role.yaml
 - gatekeeper/templates/api-group-labels.yaml
 - gatekeeper/policies/require-labels.yaml
