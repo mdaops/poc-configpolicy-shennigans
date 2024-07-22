@@ -3,4 +3,4 @@ kind: Kustomization
 resources:
 - rbac/cluster-admin-role.yaml
 - gatekeeper/templates/api-group-labels.yaml
-- gatekeeper/policies/api-group-labels.yaml
+- gatekeeper/policies/require-labels.yaml
