@@ -1,0 +1,11 @@
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sBlockNodePort
+metadata:
+  name: block-node-port
+  annotations:
+    configmanagement.gke.io/cluster-selector: application-cluster
+spec:
+  match:
+    kinds:
+      - apiGroups: [""]
+        kinds: ["Service"]
